@@ -1,5 +1,8 @@
 import React, { useState }  from 'react';
+
 import './Login.css';
+
+
 
 import user_icon from '../Assests/person.png'
 import email_icon from '../Assests/email.png'
@@ -9,11 +12,15 @@ const Login =()=>{
 
     const [action,setAction] = useState("Login");
     const [role,setRole] = useState("User");
+    
 
     const handleRoleChange = (e) => {
         setRole(e.target.value);
     }
-    return (
+    
+
+    
+        return (
         <div className = "container">
             <div className="header">
             <div className="text">{action}</div>
@@ -48,6 +55,7 @@ const Login =()=>{
             <div className="submit-container">
                 <div className={action === "Login"?"submit gray":"submit"}onClick={()=>{setAction("Sign up")}}>Signup</div>
                 <div className={action === "Sign up"?"submit gray":"submit"}onClick={()=>{setAction("Login")}}>Login</div>
+                <div className="submit" onClick={() => { window.location.href = "/adminsignup" }}>Admin Signup</div>
             </div>
         </div>
     )
