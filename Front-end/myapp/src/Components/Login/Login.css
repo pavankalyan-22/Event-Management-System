@@ -30,7 +30,7 @@
 }
 
 .inputs{
-    margin-top: 55px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -44,6 +44,7 @@
     height: 80px;
     background: #eaeaea;
     border-radius: 6px;
+    padding: 0 30px;
 }
 
 .input img{
@@ -95,4 +96,36 @@
 
     background: #EAEAEA;
     color: #676767;
+}
+select {
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 19px;
+    padding: 10px 30px;
+}
+
+.input select {
+    background: #eaeaea;
+    border-radius: 6px;
+}
+  
+select option {
+    background: #fff;
+    padding: 10px;
+    
+}
+.input select, .input input {
+    height: 50px;
+    width: calc(100% - 60px); 
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 19px;
+    padding: 10px;
+    border-radius: 6px;
 }
