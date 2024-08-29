@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import Signup from "./Signup";
 import Login from "./Login";
 import Searchbar from "../homeComponent/Searchbar";
+import Cardcomponent from "../homeComponent/Cardcomponent";
 
 class NavBar extends Component {
 	render() {
@@ -32,6 +33,7 @@ class NavBar extends Component {
 					<Route path="/signup" element={<Signup />} />
 					<Route path="/login" element={<Login />} />
 					<Route path="/" element={<Searchbar />} />
+					<Route path="/" element={<Cardcomponent />} />
 				</Routes>
 			</Router>
 		);

@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import Cardcomponent from "./Cardcomponent";
 import "./Searchbar.css";
+import { Events } from "./Events";
 
 const Searchbar = () => {
 	const [query, setquery] = useState("");
 	function handelSubmit(e) {
 		e.preventDefault();
-
-		// implement the operation for query like displaythe card
+		setquery("");
+		// implement the operation for query like display the card
 	}
 	return (
 		<>
@@ -23,7 +23,7 @@ const Searchbar = () => {
 					find
 				</button>
 			</form>
-			<Cardcomponent />
+			<Events />
 		</>
 	);
 };
