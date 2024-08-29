@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import Signup from "./Signup";
 import Login from "./Login";
+import Searchbar from "../homeComponent/Searchbar";
 
 class NavBar extends Component {
 	render() {
@@ -10,6 +11,11 @@ class NavBar extends Component {
 				<nav style={styles.nav}>
 					<h1 style={styles.logo}>MyApp</h1>
 					<ul style={styles.navLinks}>
+						<li style={styles.navItem}>
+							<Link to="/" style={styles.link}>
+								Home
+							</Link>
+						</li>
 						<li style={styles.navItem}>
 							<Link to="/signup" style={styles.link}>
 								Signup
@@ -25,7 +31,7 @@ class NavBar extends Component {
 				<Routes>
 					<Route path="/signup" element={<Signup />} />
 					<Route path="/login" element={<Login />} />
-					<Route path="/" element={<h1>Welcome to MyApp</h1>} />
+					<Route path="/" element={<Searchbar />} />
 				</Routes>
 			</Router>
 		);
