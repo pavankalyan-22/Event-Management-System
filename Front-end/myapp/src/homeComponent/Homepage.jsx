@@ -7,7 +7,6 @@ export class homepage extends Component {
 			<>
 				<div>
 					<h2>Event Management System</h2>
-					<h2>la la la </h2>
 				</div>
 				<NavBar />
 			</>
