@@ -4,13 +4,14 @@ import Signup from "./Signup";
 import Login from "./Login";
 import Searchbar from "../homeComponent/Searchbar";
 import Cardcomponent from "../homeComponent/Cardcomponent";
+import Adminpage from "../adminComponent/Adminpage";
 
 class NavBar extends Component {
 	render() {
 		return (
 			<Router>
 				<nav style={styles.nav}>
-					<h1 style={styles.logo}>MyApp</h1>
+					<h1 style={styles.logo}>BookMyEvent</h1>
 					<ul style={styles.navLinks}>
 						<li style={styles.navItem}>
 							<Link to="/" style={styles.link}>
@@ -34,6 +35,7 @@ class NavBar extends Component {
 					<Route path="/login" element={<Login />} />
 					<Route path="/" element={<Searchbar />} />
 					<Route path="/" element={<Cardcomponent />} />
+					<Route path="/adminpage" element={<Adminpage />} />
 				</Routes>
 			</Router>
 		);
